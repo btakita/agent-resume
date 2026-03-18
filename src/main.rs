@@ -2,7 +2,7 @@ use anyhow::{Context, Result};
 use clap::{Parser, Subcommand};
 use std::path::PathBuf;
 
-use agent_resume::data::Experience;
+use agent_resume::data::ResumeData;
 use agent_resume::profile::Profile;
 use agent_resume::render::render_all_experiences;
 
@@ -17,37 +17,27 @@ struct Cli {
 enum Commands {
     /// Render experiences as markdown, filtered and scored by profile
     Render {
-        /// Path to data directory containing experiences/ and skills.toml
-        #[arg(short, long, default_value = "data")]
-        data_dir: PathBuf,
+        /// Path to data.toml file
+        #[arg(short, long, default_value = "data.toml")]
+        data: PathBuf,
         /// Path to profile TOML file
         #[arg(short, long)]
         profile: Option<PathBuf>,
     },
-    /// Validate data files (check TOML parsing)
+    /// Validate data file (check TOML parsing)
     Validate {
-        /// Path to data directory
-        #[arg(short, long, default_value = "data")]
-        data_dir: PathBuf,
+        /// Path to data.toml file
+        #[arg(short, long, default_value = "data.toml")]
+        data: PathBuf,
     },
 }
 
-fn load_experiences(data_dir: &PathBuf) -> Result<Vec<Experience>> {
-    let exp_dir = data_dir.join("experiences");
-    if !exp_dir.exists() {
-        anyhow::bail!("experiences directory not found: {}", exp_dir.display());
-    }
-    let pattern = exp_dir.join("*.toml").display().to_string();
-    let mut experiences = Vec::new();
-    for entry in glob::glob(&pattern)? {
-        let path = entry?;
-        let content =
-            std::fs::read_to_string(&path).with_context(|| format!("reading {}", path.display()))?;
-        let exp: Experience =
-            toml::from_str(&content).with_context(|| format!("parsing {}", path.display()))?;
-        experiences.push(exp);
-    }
-    Ok(experiences)
+fn load_data(path: &PathBuf) -> Result<ResumeData> {
+    let content =
+        std::fs::read_to_string(path).with_context(|| format!("reading {}", path.display()))?;
+    let data: ResumeData =
+        toml::from_str(&content).with_context(|| format!("parsing {}", path.display()))?;
+    Ok(data)
 }
 
 fn load_profile(path: &PathBuf) -> Result<Profile> {
@@ -62,23 +52,23 @@ fn main() -> Result<()> {
     let cli = Cli::parse();
 
     match cli.command {
-        Commands::Render { data_dir, profile } => {
-            let experiences = load_experiences(&data_dir)?;
+        Commands::Render { data, profile } => {
+            let resume_data = load_data(&data)?;
             let profile = match profile {
                 Some(p) => load_profile(&p)?,
                 None => Profile::default(),
             };
-            let output = render_all_experiences(&experiences, &profile);
+            let output = render_all_experiences(&resume_data.experience, &profile);
             print!("{}", output);
         }
-        Commands::Validate { data_dir } => {
-            let experiences = load_experiences(&data_dir)?;
-            eprintln!("Validated {} experience files", experiences.len());
-            for exp in &experiences {
+        Commands::Validate { data } => {
+            let resume_data = load_data(&data)?;
+            eprintln!("Validated {} experiences, {} skills", resume_data.experience.len(), resume_data.skills.len());
+            for exp in &resume_data.experience {
                 eprintln!(
                     "  {} — {} ({} accomplishments)",
-                    exp.meta.company,
-                    exp.meta.title,
+                    exp.company,
+                    exp.title,
                     exp.accomplishments.len()
                 );
             }
