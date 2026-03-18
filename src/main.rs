@@ -5,6 +5,7 @@ use std::path::PathBuf;
 use agent_resume::data::ResumeData;
 use agent_resume::profile::Profile;
 use agent_resume::render::{render_all_experiences, render_resume};
+use agent_resume::search::build_search_index;
 
 #[derive(Parser)]
 #[command(name = "agent-resume", about = "Resume generator with tag-based content assembly")]
@@ -35,6 +36,12 @@ enum Commands {
     },
     /// Validate data file (check TOML parsing)
     Validate {
+        /// Path to data.toml file
+        #[arg(short, long, default_value = "data.toml")]
+        data: PathBuf,
+    },
+    /// Generate search index JSON for browser-based search
+    SearchIndex {
         /// Path to data.toml file
         #[arg(short, long, default_value = "data.toml")]
         data: PathBuf,
@@ -78,6 +85,12 @@ fn main() -> Result<()> {
             };
             let output = render_all_experiences(&resume_data.experience, &profile);
             print!("{}", output);
+        }
+        Commands::SearchIndex { data } => {
+            let resume_data = load_data(&data)?;
+            let index = build_search_index(&resume_data);
+            let json = serde_json::to_string_pretty(&index)?;
+            println!("{}", json);
         }
         Commands::Validate { data } => {
             let resume_data = load_data(&data)?;
