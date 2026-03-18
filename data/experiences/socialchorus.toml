@@ -1,0 +1,34 @@
+[meta]
+company = "SocialChorus"
+title = "Senior Software Engineer"
+start = "2018-02"
+end = "2018-08"
+duration = "7 mos"
+location = "Remote"
+type = "enterprise"
+
+[tags]
+domains = ["SaaS", "frontend"]
+skills = ["Svelte", "React", "JavaScript", "ES6"]
+patterns = ["frontend", "migration", "best practices"]
+level = ["senior"]
+
+[[accomplishments]]
+text = "Converted legacy Backbone frontend to Svelte & React"
+tags = ["Svelte", "React", "migration", "frontend"]
+impact = "modernization"
+
+[[accomplishments]]
+text = "ES5 to ES6/ES2017 migration"
+tags = ["JavaScript", "ES6", "migration"]
+impact = "modernization"
+
+[[accomplishments]]
+text = "Created best practices for front-end component development"
+tags = ["best practices", "frontend", "architecture"]
+impact = "process"
+
+[phrases]
+headline = "Frontend modernization: Backbone → Svelte/React, ES5 → ES6"
+one_liner = "Legacy frontend migration + component best practices"
+technical = "Svelte, React, ES6/ES2017 migration"

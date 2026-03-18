@@ -1,0 +1,33 @@
+[meta]
+company = "NASPP"
+title = "IT Analyst"
+start = "2004-02"
+end = "2006-01"
+duration = "1 yr 11 mos"
+type = "enterprise"
+
+[tags]
+domains = ["CRM", "finance"]
+skills = ["SQL Server", "Rails", ".NET", "MS Access", "ASP"]
+patterns = ["database administration", "reporting"]
+level = ["analyst"]
+
+[[accomplishments]]
+text = "SQL Server DB Admin"
+tags = ["SQL Server", "database administration"]
+impact = "infrastructure"
+
+[[accomplishments]]
+text = "Developed internal CRM with Rails, .NET & MS Access"
+tags = ["Rails", ".NET", "MS Access", "CRM"]
+impact = "internal-tool"
+
+[[accomplishments]]
+text = "Reports for Sales Trends and forecasting"
+tags = ["reporting", "analytics"]
+impact = "analytics"
+
+[phrases]
+headline = "IT Analyst: SQL Server admin, internal CRM, sales reporting"
+one_liner = "Database admin + CRM development + sales analytics"
+technical = "SQL Server, Rails, .NET, MS Access, ASP"

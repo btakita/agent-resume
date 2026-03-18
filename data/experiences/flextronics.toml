@@ -1,0 +1,23 @@
+[meta]
+company = "Flextronics"
+title = "Web Application Developer Intern"
+start = "2001-05"
+end = "2002-02"
+duration = "9 mos"
+type = "enterprise"
+
+[tags]
+domains = ["corporate intranet"]
+skills = ["ASP", "SQL Server"]
+patterns = ["web development"]
+level = ["intern"]
+
+[[accomplishments]]
+text = "Developed corporate intranet using Microsoft technologies (ASP, SQL Server)"
+tags = ["ASP", "SQL Server", "intranet"]
+impact = "internal-tool"
+
+[phrases]
+headline = "Corporate intranet development with ASP and SQL Server"
+one_liner = "Microsoft stack intranet development"
+technical = "ASP, SQL Server"

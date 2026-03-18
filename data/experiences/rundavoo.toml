@@ -1,0 +1,24 @@
+[meta]
+company = "Rundavoo"
+title = "Platform Architect / Lead Front End Developer"
+start = "2013-03"
+end = "2014-12"
+duration = "1 yr 10 mos"
+location = "Greater Los Angeles Area"
+type = "startup"
+
+[tags]
+domains = ["social", "mobile", "web"]
+skills = ["HTML5", "CSS3", "Node.js", "Browserify", "Jasmine", "Cloudflare", "PhoneGap"]
+patterns = ["reactive programming", "cross-platform", "responsive"]
+level = ["architect", "lead"]
+
+[[accomplishments]]
+text = "Led front-end development for Rundavoo, a Google top 75 app in 2014 — responsive, multi-platform (desktop, tablet, mobile, server) application with CORS API integration"
+tags = ["frontend", "cross-platform", "responsive", "mobile"]
+impact = "core-product"
+
+[phrases]
+headline = "Google top 75 app — responsive multi-platform frontend architecture"
+one_liner = "Led frontend for Google top 75 app — desktop/tablet/mobile/server"
+technical = "HTML5, CSS3, Node.js, Browserify, PhoneGap, Cloudflare"

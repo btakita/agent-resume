@@ -1,0 +1,39 @@
+[meta]
+company = "TrueCar / honk.com"
+title = "Lead Developer → Senior Software Engineer"
+start = "2009-08"
+end = "2012-02"
+duration = "2 yrs 7 mos"
+location = "Santa Monica, CA"
+type = "startup"
+
+[tags]
+domains = ["automotive", "e-commerce", "social"]
+skills = ["Ruby on Rails", "Sinatra", "Lucene", "JavaScript", "Chef", "EC2"]
+patterns = ["full-stack", "devops", "search", "acquisition"]
+level = ["lead", "senior"]
+
+[[accomplishments]]
+text = "Led development of honk.com, a vehicle review and white-label platform used by USAA and Wall Street Journal Autos — acquired by TrueCar"
+tags = ["leadership", "acquisition", "platform"]
+impact = "core-product"
+
+[[accomplishments]]
+text = "Partnered on product vision for social car shopping that was key to the acquisition"
+tags = ["product", "acquisition", "strategy"]
+impact = "business"
+
+[[accomplishments]]
+text = "Senior member of advanced product team at TrueCar — introduced new products, partner integrations (WSJ.com, USAA.com), and devops automation"
+tags = ["product", "integrations", "devops"]
+impact = "growth"
+
+[[accomplishments]]
+text = "Chef scripts for server and workstation automation; high availability deployment on EC2 and Engine Yard"
+tags = ["Chef", "devops", "EC2", "infrastructure"]
+impact = "infrastructure"
+
+[phrases]
+headline = "Led honk.com (acquired by TrueCar) — vehicle review platform for USAA, WSJ Autos"
+one_liner = "honk.com → TrueCar acquisition; product vision + Rails + devops"
+technical = "Ruby on Rails, Sinatra, Lucene, Chef, EC2, Engine Yard"

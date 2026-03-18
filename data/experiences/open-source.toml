@@ -1,0 +1,67 @@
+[meta]
+company = "Open Source"
+title = "Creator / Solo Developer"
+start = "2006"
+location = "Remote"
+type = "open-source"
+
+[tags]
+domains = ["developer tooling", "reactive programming", "BDD", "testing", "AI agents"]
+skills = ["Rust", "TypeScript", "Ruby", "Python", "Zig", "JavaScript"]
+patterns = ["reactive programming", "event-driven", "context engineering", "agentic workflows", "BDD", "spec-driven development"]
+level = ["architecture", "creator", "open-source"]
+
+[[accomplishments]]
+text = "Built corky: git-native correspondence system in Rust syncing email, Telegram, and Slack into scoped markdown mailboxes with per-contact agent context"
+tags = ["Rust", "developer tooling", "AI agents", "correspondence"]
+impact = "shipped-product"
+
+[[accomplishments]]
+text = "Created agent-doc: document-as-interface for persistent AI conversations with CRDT-based streaming merge for real-time human+agent co-editing"
+tags = ["Rust", "developer tooling", "AI agents", "CRDT"]
+impact = "shipped-product"
+
+[[accomplishments]]
+text = "Built agent-kit: Rust SDK for CLI tools integrating with AI agent loops — session management, tmux pane routing, instruction file discovery"
+tags = ["Rust", "developer tooling", "AI agents", "SDK"]
+impact = "shipped-product"
+
+[[accomplishments]]
+text = "Created tmux-router: declarative tmux pane routing in Rust for multiplexed agent orchestration across concurrent development contexts"
+tags = ["Rust", "developer tooling", "AI agents"]
+impact = "shipped-product"
+
+[[accomplishments]]
+text = "Built tagpath: cross-language identifier analysis tool in Rust with convention detection, semantic search across 14 tree-sitter grammars"
+tags = ["Rust", "developer tooling", "analysis"]
+impact = "shipped-product"
+
+[[accomplishments]]
+text = "Created lazily-rs/lazily-py/lazily-zig: reactive signals with cross-language ports maintaining consistent semantics across Rust, Python, and Zig"
+tags = ["Rust", "Python", "Zig", "reactive programming"]
+impact = "shipped-product"
+
+[[accomplishments]]
+text = "Created ctx-core: explicit, scalable cross-platform reactive contexts in JavaScript — foundation for rmemo, RelementJS, rappstack"
+tags = ["JavaScript", "reactive programming", "architecture"]
+impact = "foundation"
+
+[[accomplishments]]
+text = "Created rr (double Ruby): pioneered proxy-based test doubles (mock.proxy, stub.proxy) — pattern now standard as patch in Python's pytest/unittest"
+tags = ["Ruby", "testing", "BDD", "innovation"]
+impact = "technical-innovation"
+
+[[accomplishments]]
+text = "Core contributor to RSpec: the Ruby Behavior Driven Development testing framework"
+tags = ["Ruby", "testing", "BDD"]
+impact = "community"
+
+[[accomplishments]]
+text = "Created domain ontology system (philosophy, 2014): structuring agent reasoning across domains with extensible scope, context, and resolution"
+tags = ["context engineering", "ontology", "architecture"]
+impact = "foundation"
+
+[phrases]
+headline = "Open source creator: corky, agent-doc, rr, RSpec contributor; 15-year reactive framework lineage"
+one_liner = "Agent tooling in Rust + BDD pioneer + reactive programming frameworks"
+technical = "Rust CLIs, CRDT merge, tree-sitter grammars, proxy-based test doubles"

@@ -1,0 +1,22 @@
+[meta]
+company = "Peer to Patent Project"
+title = "Consultant"
+start = "2007"
+duration = "project-based"
+type = "consulting"
+
+[tags]
+domains = ["legal", "civic tech", "patent"]
+skills = ["web development"]
+patterns = ["crowdsourcing", "civic tech"]
+level = ["consultant"]
+
+[[accomplishments]]
+text = "Key contributor to launching the Peer to Patent pilot application, led by New York Law School — a tool to allow the crowd to review and submit prior art for pending patents"
+tags = ["civic tech", "crowdsourcing", "patent", "legal"]
+impact = "civic"
+
+[phrases]
+headline = "Peer to Patent: crowdsourced patent prior art review for New York Law School"
+one_liner = "Civic tech — crowdsourced patent review pilot"
+technical = "Web application for prior art submission"

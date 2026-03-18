@@ -1,0 +1,49 @@
+[meta]
+company = "Brian Takita"
+title = "Full-Stack Engineer"
+start = "2019-01"
+end = "2026-02"
+duration = "7 yrs 1 mo"
+location = "Remote"
+type = "freelance"
+
+[tags]
+domains = ["web", "mobile", "AI/ML", "SaaS"]
+skills = ["Flutter", "Angular", "React", "TypeScript", "Firebase", "AWS", "Python", "WordPress", "PHP"]
+patterns = ["full-stack", "cross-platform", "real-time"]
+level = ["full-stack", "lead"]
+
+[[accomplishments]]
+text = "BestInform: European information platform — pixel-perfect Figma implementation, real-time support messaging. Angular 14, PrimeNG, Firebase"
+tags = ["Angular", "Firebase", "real-time", "SaaS"]
+impact = "client-project"
+
+[[accomplishments]]
+text = "Guard App: Security service platform — admin portal and mobile apps for patrol management, incident reporting, NFC verification. Flutter, Angular, Firebase, Java Spring Boot"
+tags = ["Flutter", "Angular", "Firebase", "mobile"]
+impact = "client-project"
+
+[[accomplishments]]
+text = "Drivemond: Taxi and ride-hailing platform for Chicago — passenger and driver mobile apps with real-time matching and GPS tracking. Flutter, AWS"
+tags = ["Flutter", "AWS", "real-time", "mobile"]
+impact = "client-project"
+
+[[accomplishments]]
+text = "Galler AI: AI-powered image generation and editing platform — React frontend with Figma design system; cropping, clipping, drawing tools"
+tags = ["React", "TypeScript", "AI/ML"]
+impact = "client-project"
+
+[[accomplishments]]
+text = "SafeSchoolz (Aegis Platform): AI safety platform detecting firearms and alerting authorities — built gun detection model (~85% mAP). Android, .NET, Python/Jupyter, Twilio"
+tags = ["AI/ML", "Python", "Android", ".NET"]
+impact = "client-project"
+
+[[accomplishments]]
+text = "IIPM: Membership and certification platform for Irish pension specialists — member and admin portals. WordPress, PHP, JavaScript/jQuery, Stripe"
+tags = ["WordPress", "PHP", "Stripe"]
+impact = "client-project"
+
+[phrases]
+headline = "Full-stack freelance engineer: web and mobile apps across industries"
+one_liner = "Flutter, Angular, React apps — real-time messaging, AI image generation, ride-hailing"
+technical = "Flutter, Angular 14, React, Firebase, AWS, Python, WordPress"

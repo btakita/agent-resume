@@ -1,0 +1,29 @@
+[meta]
+company = "Censible"
+title = "Lead Product Developer"
+start = "2016-01"
+end = "2024-04"
+duration = "8 yrs 4 mos"
+location = "Greater New York City Area"
+type = "startup"
+
+[tags]
+domains = ["fintech", "ESG", "analytics"]
+skills = ["JavaScript", "TypeScript", "SvelteJS", "Node.js", "PostgreSQL"]
+patterns = ["full-stack", "data visualization", "analytics"]
+level = ["lead", "full-stack", "product"]
+
+[[accomplishments]]
+text = "Built Martin Investments analyst portal with ESG rating algorithms, XLSX export handling 10,000+ rows, and SVG/PDF report generation"
+tags = ["analytics", "data visualization", "fintech"]
+impact = "core-product"
+
+[[accomplishments]]
+text = "Built ESG Portfolio Rebalancing system and ESG analytics platform"
+tags = ["fintech", "ESG", "analytics"]
+impact = "core-product"
+
+[phrases]
+headline = "8-year ESG analytics platform — analyst portal, portfolio rebalancing, report generation"
+one_liner = "Martin Investments analyst portal + ESG Portfolio Rebalancing"
+technical = "ESG rating algorithms, XLSX export, SVG/PDF report generation"

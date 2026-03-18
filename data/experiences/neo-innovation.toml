@@ -1,0 +1,24 @@
+[meta]
+company = "Neo Innovation, Inc."
+title = "Software Development Consultant"
+start = "2015-09"
+end = "2015-12"
+duration = "4 mos"
+location = "Greater New York City Area"
+type = "consulting"
+
+[tags]
+domains = ["CRM", "research pipeline", "document-as-interface"]
+skills = ["Salesforce", "email integration"]
+patterns = ["document-as-interface", "semantic matching"]
+level = ["consultant"]
+
+[[accomplishments]]
+text = "Built a document-as-interface application for Tenfore Holdings — a research pipeline where executives email contacts and contextual notes, semantically matched to companies and contacts in Salesforce, then routed to the analyst team"
+tags = ["document-as-interface", "semantic matching", "CRM", "pipeline"]
+impact = "client-project"
+
+[phrases]
+headline = "Document-as-interface research pipeline for Tenfore Holdings via Salesforce"
+one_liner = "Early document-as-interface pattern — later evolved into agent-doc"
+technical = "Semantic matching, Salesforce integration, email pipeline"

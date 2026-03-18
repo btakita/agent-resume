@@ -1,0 +1,211 @@
+[skills.context_engineering]
+display = "Context Engineering"
+category = "practice"
+tags = ["AI/ML", "agentic", "architecture"]
+years = 10
+related = ["agentic workflows", "agent tooling", "domain ontology"]
+
+[skills.spec_driven_development]
+display = "Spec-Driven Development"
+category = "practice"
+tags = ["methodology", "agentic"]
+related = ["agent tooling", "BDD"]
+
+[skills.agents]
+display = "Agents"
+category = "practice"
+tags = ["AI/ML", "agentic", "tooling"]
+related = ["agentic workflows", "context engineering"]
+
+[skills.rust]
+display = "Rust"
+category = "language"
+tags = ["systems", "performance", "safety"]
+years = 5
+
+[skills.python]
+display = "Python"
+category = "language"
+tags = ["AI/ML", "scripting", "data"]
+years = 10
+
+[skills.typescript]
+display = "TypeScript"
+category = "language"
+tags = ["frontend", "backend", "full-stack"]
+years = 10
+
+[skills.zig]
+display = "Zig"
+category = "language"
+tags = ["systems", "performance"]
+years = 2
+
+[skills.react]
+display = "React"
+category = "framework"
+tags = ["frontend", "UI"]
+years = 8
+
+[skills.sveltejs]
+display = "SvelteJS"
+category = "framework"
+tags = ["frontend", "UI"]
+years = 6
+
+[skills.docker]
+display = "Docker"
+category = "infrastructure"
+tags = ["containers", "devops"]
+years = 8
+
+[skills.webrtc]
+display = "WebRTC"
+category = "protocol"
+tags = ["real-time", "video", "streaming"]
+years = 2
+
+[skills.rest]
+display = "REST"
+category = "protocol"
+tags = ["API", "web"]
+years = 15
+
+[skills.graphql]
+display = "GraphQL"
+category = "protocol"
+tags = ["API", "web"]
+years = 5
+
+[skills.nodejs]
+display = "Node.js"
+category = "runtime"
+tags = ["backend", "JavaScript"]
+years = 12
+
+[skills.nextjs]
+display = "Next.js"
+category = "framework"
+tags = ["frontend", "React", "SSR"]
+years = 3
+
+[skills.django]
+display = "Django"
+category = "framework"
+tags = ["backend", "Python"]
+
+[skills.fastapi]
+display = "FastAPI"
+category = "framework"
+tags = ["backend", "Python", "API"]
+years = 2
+
+[skills.flask]
+display = "Flask"
+category = "framework"
+tags = ["backend", "Python"]
+
+[skills.graphene]
+display = "Graphene"
+category = "library"
+tags = ["GraphQL", "Python"]
+
+[skills.sqlalchemy]
+display = "SQLAlchemy"
+category = "library"
+tags = ["database", "Python", "ORM"]
+
+[skills.angular]
+display = "Angular"
+category = "framework"
+tags = ["frontend", "TypeScript"]
+years = 3
+
+[skills.vuejs]
+display = "Vue.js"
+category = "framework"
+tags = ["frontend", "JavaScript"]
+
+[skills.zod]
+display = "Zod"
+category = "library"
+tags = ["validation", "TypeScript"]
+
+[skills.flutter]
+display = "Flutter"
+category = "framework"
+tags = ["mobile", "cross-platform"]
+years = 3
+
+[skills.go]
+display = "Go"
+category = "language"
+tags = ["backend", "systems"]
+
+[skills.ruby_on_rails]
+display = "Ruby on Rails"
+category = "framework"
+tags = ["backend", "web", "Ruby"]
+years = 10
+
+[skills.csharp]
+display = "C#"
+category = "language"
+tags = [".NET", "backend"]
+
+[skills.postgresql]
+display = "PostgreSQL"
+category = "database"
+tags = ["SQL", "relational"]
+years = 15
+
+[skills.supabase]
+display = "Supabase"
+category = "platform"
+tags = ["database", "backend", "PostgreSQL"]
+
+[skills.firebase]
+display = "Firebase"
+category = "platform"
+tags = ["database", "backend", "real-time"]
+years = 5
+
+[skills.aws]
+display = "AWS"
+category = "cloud"
+tags = ["infrastructure", "cloud"]
+years = 10
+
+[skills.terraform]
+display = "Terraform"
+category = "infrastructure"
+tags = ["IaC", "devops"]
+
+[skills.google_cloud]
+display = "Google Cloud"
+category = "cloud"
+tags = ["infrastructure", "cloud"]
+
+[skills.azure]
+display = "Azure"
+category = "cloud"
+tags = ["infrastructure", "cloud"]
+
+[skills.cicd]
+display = "CI/CD"
+category = "practice"
+tags = ["devops", "automation"]
+years = 15
+
+[skills.agentic_systems]
+display = "Agentic Systems"
+category = "practice"
+tags = ["AI/ML", "agentic", "architecture"]
+years = 2
+related = ["context engineering", "agents"]
+
+[skills.claude]
+display = "Claude"
+category = "AI"
+tags = ["AI/ML", "LLM", "agentic"]
+years = 2

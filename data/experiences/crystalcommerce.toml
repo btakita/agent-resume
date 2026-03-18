@@ -1,0 +1,23 @@
+[meta]
+company = "CrystalCommerce"
+title = "Senior Software Developer"
+start = "2015-01"
+end = "2015-09"
+duration = "9 mos"
+type = "enterprise"
+
+[tags]
+domains = ["e-commerce"]
+skills = ["Ruby on Rails", "Node.js", "Backbone", "Browserify", "Gulp"]
+patterns = ["migration", "frontend", "architecture"]
+level = ["senior"]
+
+[[accomplishments]]
+text = "Migrated production Rails app and re-architected the front end using Node.js, Browserify, Gulp, and Backbone"
+tags = ["Rails", "Node.js", "migration", "frontend", "architecture"]
+impact = "modernization"
+
+[phrases]
+headline = "Rails migration + frontend re-architecture with Node.js/Browserify"
+one_liner = "Production Rails migration and frontend modernization"
+technical = "Rails, Node.js, Browserify, Gulp, Backbone"

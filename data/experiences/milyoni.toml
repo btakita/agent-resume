@@ -1,0 +1,34 @@
+[meta]
+company = "Milyoni, Inc."
+title = "Architect / Lead Developer"
+start = "2012-03"
+end = "2013-03"
+duration = "1 yr 1 mo"
+location = "Pleasanton, CA"
+type = "startup"
+
+[tags]
+domains = ["entertainment", "social", "video", "real-time"]
+skills = ["Node.js", "Backbone.js", "Rails", "PostgreSQL", "Redis", "Heroku"]
+patterns = ["real-time", "architecture", "mentoring"]
+level = ["architect", "lead"]
+
+[[accomplishments]]
+text = "Lead developer for Social Entertainment Platform including video, social marketing, gamification, real-time social interaction, and interactive engagements synced with video"
+tags = ["video", "real-time", "social", "entertainment"]
+impact = "core-product"
+
+[[accomplishments]]
+text = "Platform used by Warner Brothers, Lions Gate, Paramount Studios, Universal Music Group, Hearst Media, Starz, Ovation TV, Astro, Focus Features, Funimation, Sundance Now"
+tags = ["enterprise", "entertainment", "scale"]
+impact = "client-portfolio"
+
+[[accomplishments]]
+text = "Mentored junior & mid-level developers; proponent of flattening communication across the organization"
+tags = ["mentoring", "leadership"]
+impact = "process"
+
+[phrases]
+headline = "Social Entertainment Platform for Warner Brothers, Lions Gate, Paramount, Universal Music Group"
+one_liner = "Real-time social video platform for major entertainment studios"
+technical = "Node.js, Backbone.js, Rails, Postgres, Redis, Heroku"

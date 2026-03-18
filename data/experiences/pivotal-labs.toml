@@ -1,0 +1,38 @@
+[meta]
+company = "Pivotal Labs"
+title = "Agile Engineer"
+start = "2006-01"
+end = "2009-08"
+duration = "3 yrs 7 mos"
+type = "consulting"
+
+[tags]
+domains = ["consulting", "agile", "BDD", "open source"]
+skills = ["Ruby on Rails", "JavaScript", "TDD"]
+patterns = ["agile", "XP", "pair programming", "mentoring", "BDD"]
+level = ["engineer", "mentor", "speaker"]
+
+[[accomplishments]]
+text = "Mentored developers across 20+ startups, bootstrapping their engineering process, team, and initial product"
+tags = ["mentoring", "consulting", "startups"]
+impact = "community"
+
+[[accomplishments]]
+text = "Speaker at RailsConf 2008"
+tags = ["speaking", "community", "Rails"]
+impact = "community"
+
+[[accomplishments]]
+text = "Leadership role in common code, practices, and open source (Erector, JS Test Server, Unison)"
+tags = ["open source", "leadership", "best practices"]
+impact = "community"
+
+[[accomplishments]]
+text = "Agile Development in the XP tradition: TDD, Pair Programming, Daily Standups, Retrospectives"
+tags = ["agile", "XP", "TDD", "pair programming"]
+impact = "process"
+
+[phrases]
+headline = "Pivotal Labs: mentored 20+ startups, RailsConf speaker, BDD pioneer"
+one_liner = "Agile consulting — XP, TDD, pair programming across 20+ startups"
+technical = "Ruby on Rails, JavaScript TDD, Erector, JS Test Server"
