@@ -4,7 +4,7 @@ use std::path::PathBuf;
 
 use agent_resume::data::ResumeData;
 use agent_resume::profile::Profile;
-use agent_resume::render::render_all_experiences;
+use agent_resume::render::{render_all_experiences, render_resume};
 
 #[derive(Parser)]
 #[command(name = "agent-resume", about = "Resume generator with tag-based content assembly")]
@@ -15,7 +15,16 @@ struct Cli {
 
 #[derive(Subcommand)]
 enum Commands {
-    /// Render experiences as markdown, filtered and scored by profile
+    /// Build full resume markdown from data.toml + profile
+    Build {
+        /// Path to data.toml file
+        #[arg(short, long, default_value = "data.toml")]
+        data: PathBuf,
+        /// Path to profile TOML file
+        #[arg(short, long)]
+        profile: Option<PathBuf>,
+    },
+    /// Render just experiences (filtered and scored by profile)
     Render {
         /// Path to data.toml file
         #[arg(short, long, default_value = "data.toml")]
@@ -52,6 +61,15 @@ fn main() -> Result<()> {
     let cli = Cli::parse();
 
     match cli.command {
+        Commands::Build { data, profile } => {
+            let resume_data = load_data(&data)?;
+            let profile = match profile {
+                Some(p) => load_profile(&p)?,
+                None => Profile::default(),
+            };
+            let output = render_resume(&resume_data, &profile);
+            print!("{}", output);
+        }
         Commands::Render { data, profile } => {
             let resume_data = load_data(&data)?;
             let profile = match profile {
@@ -63,7 +81,12 @@ fn main() -> Result<()> {
         }
         Commands::Validate { data } => {
             let resume_data = load_data(&data)?;
-            eprintln!("Validated {} experiences, {} skills", resume_data.experience.len(), resume_data.skills.len());
+            eprintln!(
+                "Validated {} experiences, {} skills, {} career highlights",
+                resume_data.experience.len(),
+                resume_data.skills.len(),
+                resume_data.career_highlights.len()
+            );
             for exp in &resume_data.experience {
                 eprintln!(
                     "  {} — {} ({} accomplishments)",

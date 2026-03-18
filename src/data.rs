@@ -1,6 +1,53 @@
 use serde::Deserialize;
 use std::collections::HashMap;
 
+/// Contact information
+#[derive(Debug, Default, Deserialize)]
+pub struct Contact {
+    pub name: Option<String>,
+    pub email: Option<String>,
+    pub phone: Option<String>,
+    pub location: Option<String>,
+    pub linkedin: Option<String>,
+    pub github: Option<String>,
+    pub website: Option<String>,
+}
+
+/// Summary section
+#[derive(Debug, Default, Deserialize)]
+pub struct Summary {
+    pub text: Option<String>,
+}
+
+/// Career highlight entry
+#[derive(Debug, Deserialize)]
+pub struct CareerHighlight {
+    pub text: String,
+    #[serde(default)]
+    pub tags: Vec<String>,
+}
+
+/// Education entry
+#[derive(Debug, Deserialize)]
+pub struct Education {
+    pub institution: String,
+    pub degree: String,
+    pub years: Option<String>,
+}
+
+/// Certification entry
+#[derive(Debug, Deserialize)]
+pub struct Certification {
+    pub name: String,
+}
+
+/// Language entry
+#[derive(Debug, Deserialize)]
+pub struct Language {
+    pub name: String,
+    pub level: Option<String>,
+}
+
 /// A single accomplishment with tags and impact classification
 #[derive(Debug, Deserialize)]
 pub struct Accomplishment {
@@ -66,6 +113,18 @@ impl Experience {
 /// Top-level data.toml structure
 #[derive(Debug, Deserialize)]
 pub struct ResumeData {
+    #[serde(default)]
+    pub contact: Contact,
+    #[serde(default)]
+    pub summary: Summary,
+    #[serde(default)]
+    pub career_highlights: Vec<CareerHighlight>,
+    #[serde(default)]
+    pub education: Vec<Education>,
+    #[serde(default)]
+    pub certifications: Vec<Certification>,
+    #[serde(default)]
+    pub languages: Vec<Language>,
     #[serde(default)]
     pub skills: HashMap<String, Skill>,
     #[serde(default)]
