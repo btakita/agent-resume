@@ -1,0 +1,44 @@
+[meta]
+company = "Presence AI"
+title = "Director of Engineering"
+start = "2022-09"
+end = "2025-12"
+duration = "3 yrs 3 mos"
+location = "Remote"
+type = "startup"
+
+[tags]
+domains = ["AI/ML", "real-time systems", "video", "WebRTC"]
+skills = ["Python", "Rust", "TypeScript", "React", "FastAPI", "Docker", "AWS"]
+patterns = ["reactive programming", "event-driven", "context engineering", "agentic workflows"]
+level = ["architecture", "full-stack", "infrastructure", "team-lead"]
+
+[[accomplishments]]
+text = "Built real-time AI avatar pipeline processing video/audio streams with sub-100ms latency"
+tags = ["AI/ML", "real-time", "video", "pipeline", "performance"]
+impact = "core-product"
+
+[[accomplishments]]
+text = "Designed reactive signal graph architecture for deterministic avatar response timing"
+tags = ["reactive programming", "architecture", "performance"]
+impact = "technical-innovation"
+
+[[accomplishments]]
+text = "Implemented WebRTC streaming infrastructure for live avatar sessions"
+tags = ["WebRTC", "infrastructure", "real-time"]
+impact = "infrastructure"
+
+[[accomplishments]]
+text = "Developed multimodal AI pipeline integrating LLM, TTS, and lip-sync models"
+tags = ["AI/ML", "pipeline", "multimodal"]
+impact = "core-product"
+
+[[accomplishments]]
+text = "Created context engineering system for agentic workflow orchestration"
+tags = ["context engineering", "agentic workflows", "architecture"]
+impact = "technical-innovation"
+
+[phrases]
+headline = "Led engineering at AI avatar startup; built real-time video pipeline"
+one_liner = "Real-time AI avatar pipeline with reactive signal architecture"
+technical = "Reactive signal graph, WebRTC streaming, sub-100ms latency"
